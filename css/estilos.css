@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,body
+{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden;  */
+}
+
+h1,h2,h3,h4,h5{
+    letter-spacing: 1.5px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.rojo{
+    margin: 20px;
+    padding: 20px;
+    background-image: url('../assets/fondo_rojo_textura.jpg');
+    border-radius: 10px;
+}
+
+
+.negro{
+    margin:20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-image: url('../assets/fondo_negro.jpg');
+    border-radius: 10px;
+}
+
+/* Estilos del header */
+
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    margin: 0;
+}
+
+.icon-menu{
+    display: block;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+/* Estilos del menu */
+nav{
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    left:-100%;
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    /* background: aqua; */
+    background-image: url('/assets/fondo_rojo_textura.jpg');
+    text-decoration: none;
+    color: white;
+}
+
+.menu__link:hover,.active{
+    color: gold;
+}
+
+.mostrar{
+    left:0;
+}
+
+
+/* Estilos del banner */
+
+.banner_img{
+    margin-top: -65px;
+    position: relative;
+    z-index: -1000;
+    object-fit: cover; 
+}
+
+/* Estilos de zonas */
+.main{
+    margin: 5px;
+    margin-top: 50px;
+}
+
+.zona {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.textoConcreto,.textoPapel{
+    position:absolute; 
+    font-size:30px;
+    color:white
+}
+.textoPapel{
+    position: absolute;
+    top:0; 
+    left:10%;
+    font-family: dreamsKosama;
+}
+
+.textoConcreto{
+    position: absolute;
+    bottom:0;
+    right: 5%;
+    font-family: concretoKosama;
+}
+
+/* CATEGORIAS */
+
+.letraCategoria{
+    font-family:categoriaKosama;
+    font-style: italic;
+}
+
+.categoria{
+    padding: 10px;
+    /* width: 33%;s */
+    position: relative;
+}
+
+.categoria p{
+    /* display: inline; */
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    z-index: 10000;
+}
+
+.viviendas{
+    bottom: 5%;
+    right: 10%;
+}
+
+.edificios{
+    bottom: 5%;
+    right: 10%;
+}
+
+.campo{
+    bottom: 5%;
+    right: 10%;
+}
+
+.categoria:hover img{
+    background: rgba(0, 0, 0,0.4);
+}
+
+.categoria a::before{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.categoria a:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos responsive */
+@media(min-width:900px){
+
+    .nav{
+        position: static;
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+        background: url('../assets/brocha.png');
+        overflow:hidden
+    }
+    .icon-menu{
+        display: none;
+    }
+    .categoria{
+        width: 33%;
+    }
+
+    .categoria img{
+        /* width: 100%; */
+    }
+
+    .categoria p{
+        font-size: 30px;
+        /* width: 100%; */
+    }
+
+    .info{
+        width: 100%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+
+    .fotoSlider,.fotoSlider2{
+        width: 50%;
+        padding-right: 20px;
+        padding-left: 60px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        /* left: 0; */
+        float:left;
+    }
+    .fotoSlider2{
+        float: right;
+    }
+
+    .zona{
+        margin: 0;
+    }
+
+    .main{
+        margin: 0;
+        margin-top: 35px;
+
+    }
+
+    .header{
+        margin: 0;
+        padding: 0;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .header .contenedor{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+        top: 0;
+    }
+
+    .logo{
+        z-index: 1000000;
+    }
+
+    .rojo{
+        margin: 20px;
+        padding: 20px;
+        padding-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .negro{
+        display: inline-flex;
+    }
+
+    .img__categoria{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 20px;   
+    }
+
+    .textoConcreto,.textoPapel{
+        font-size: 50px;
+    }
+}
+
+@media(min-width:1500px){
+
+    .rojo{
+        margin-bottom: 10px;
+        height: 680px;
+    }
+
+    .fotoSlider,.fotoSlider2{
+        width: 45%;
+        margin-top: 0;
+        padding-top: 0;
+        margin-left: 0;
+        /* padding-left: 10px; */
+    }
+    .info{
+        /* display: inline-flex; */
+        /* margin-left: 10%; */
+    }
+    .info_zona{
+        width: 100%;
+    }
+    /* .info{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } */
+}
+
+
+/* Fuentes */
+@font-face{
+    font-family: dreamsKosama;
+    src: url("../assets/fonts/viner-hand-itc.ttf");
+}
+
+@font-face{
+    font-family: concretoKosama;
+    src: url("../assets/fonts/concreto.ttf");
+}
+
+@font-face{
+    font-family: categoriaKosama;
+    src: url("../assets/fonts/ink-free-normal.ttf");
+}
