@@ -6,10 +6,8 @@
 html,body
 {
     width: 100%;
-    /* height: 100%; */
     margin: 0px;
     padding: 0px;
-    /* overflow-x: hidden;  */
 }
 
 h1,h2,h3,h4,h5{
@@ -19,6 +17,7 @@ h1,h2,h3,h4,h5{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .rojo{
@@ -80,13 +79,15 @@ nav{
     list-style: none;
     padding: 0;
     margin: 0;
+    background-size: contain;
+    background-image: url('/assets/brocha.png');
+    background-repeat: no-repeat;
 }
 
 .menu__link{
     display: block;
     padding: 15px;
     /* background: aqua; */
-    background-image: url('/assets/fondo_rojo_textura.jpg');
     text-decoration: none;
     color: white;
 }
@@ -148,31 +149,22 @@ nav{
 
 .categoria{
     padding: 10px;
-    /* width: 33%;s */
     position: relative;
 }
 
 .categoria p{
-    /* display: inline; */
     position: absolute;
     color: #fff;
     font-size: 24px;
     z-index: 10000;
 }
 
-.viviendas{
-    bottom: 5%;
+.viviendas,.edificios,.campo{
+    bottom: 8%;
     right: 10%;
-}
-
-.edificios{
-    bottom: 5%;
-    right: 10%;
-}
-
-.campo{
-    bottom: 5%;
-    right: 10%;
+    font-family: centuryCategoria;
+    font-weight: bold;
+    text-align: right;
 }
 
 .categoria:hover img{
@@ -200,17 +192,69 @@ nav{
     visibility: visible;
 }
 
+.categoria img{
+    height: 100%;
+    width: 100%;
+}
+/* PAGINA CATEGORIA */
+
+.portada-categoria{
+    position: relative;
+}
+
+.portada-categoria img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.portada-categoria p{
+    position: absolute;
+    /* top: 40px; */
+}
+
+/* PAGINA PROYECTO */
+
+.main-proyecto{
+    margin: 5px;
+    margin-top: 50px;
+}
+
+.content-proyecto{
+    padding: 20px;
+}
+
+.content-fotos img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;  
+}
+
+.proyecto{
+    margin:0;
+    margin-top:0;
+    padding: 10px;
+}
+
+.rojo-proyecto{
+    /* margin: 20px; */
+    padding: 10px;
+}
+
 /* Estilos responsive */
-@media(min-width:900px){
+@media screen and (min-width:900px){
 
     .nav{
         position: static;
         width: auto;
+        margin: auto;
+        /* right: 1000px; */
     }
 
     .menu{
         display: flex;
-        background: url('../assets/brocha.png');
+        /* background: url('../assets/brocha.png'); */
         overflow:hidden
     }
     .icon-menu{
@@ -233,22 +277,18 @@ nav{
         width: 100%;
         display: flex;
         /* flex-wrap: wrap; */
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
     .fotoSlider,.fotoSlider2{
         width: 50%;
-        padding-right: 20px;
-        padding-left: 60px;
         margin-top: 0;
         padding-top: 0;
         margin-left: 0;
         margin-right: 0;
-        /* left: 0; */
-        float:left;
-    }
-    .fotoSlider2{
-        float: right;
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .zona{
@@ -266,6 +306,7 @@ nav{
         padding: 0;
         top: 0;
         margin-top: 0;
+
     }
 
     .header .contenedor{
@@ -273,6 +314,11 @@ nav{
         padding: 0;
         margin-bottom: 100px;
         top: 0;
+    }
+
+    .main .contenedor{
+        width: 100%;
+        margin: auto;
     }
 
     .logo{
@@ -284,10 +330,12 @@ nav{
         padding: 20px;
         padding-top: 0;
         margin-bottom: 25px;
+        height: 100%;
     }
 
-    .negro{
-        display: inline-flex;
+    .categoria-fila{
+        display: flex;
+        /* width: 99%; */
     }
 
     .img__categoria{
@@ -299,36 +347,82 @@ nav{
 
     .textoConcreto,.textoPapel{
         font-size: 50px;
+        position: absolute;
+    }
+
+    .textoPapel{
+        top:0;         
+        left:0;
+        font-family: dreamsKosama;
+    }
+    
+    .textoConcreto{
+        bottom:0;
+        right: 0;
+        text-transform: uppercase;
+        font-family: concretoKosama;
+    }
+
+    /* PAGINA CATEGORIA*/
+
+    .portada-categoria img{
+        padding: 30px;
+    }
+
+    /* PAGINA PROYECTO */
+
+    .main-proyecto{
+        display: flex;
+        justify-content: space-between;
+        overflow-y: scroll;
+    }
+
+    .content-proyecto{
+        /* position: fixed; */
+    }
+    
+    .content-fotos{
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    .content-fotos img{
+        height: 500px;
+    }
+
+    .fixed{
+        position:fixed;
+    }
+
+    .proyecto{
+
     }
 }
 
-@media(min-width:1500px){
+@media screen and (min-width:1500px){
 
     .rojo{
         margin-bottom: 10px;
-        height: 680px;
+        /* height: 680px; */
+    }
+
+    .negro{
+        width: 100%;
+        margin:20px;
     }
 
     .fotoSlider,.fotoSlider2{
-        width: 45%;
+        /* width: 45%;
         margin-top: 0;
         padding-top: 0;
-        margin-left: 0;
+        margin-left: 0; */
         /* padding-left: 10px; */
     }
-    .info{
-        /* display: inline-flex; */
-        /* margin-left: 10%; */
-    }
+
     .info_zona{
         width: 100%;
     }
-    /* .info{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    } */
+
 }
 
 
@@ -346,4 +440,9 @@ nav{
 @font-face{
     font-family: categoriaKosama;
     src: url("../assets/fonts/ink-free-normal.ttf");
+}
+
+@font-face{
+    font-family: centuryCategoria;
+    src: url("../assets//fonts/century.ttf");
 }
