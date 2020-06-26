@@ -232,9 +232,10 @@ nav{
 }
 
 .proyecto{
-    margin:0;
+    margin:20px;
     margin-top:0;
     padding: 10px;
+    background-color: white;
 }
 
 .rojo-proyecto{
@@ -254,7 +255,8 @@ nav{
 
     .menu{
         display: flex;
-        /* background: url('../assets/brocha.png'); */
+        background: url('../assets/brocha.png');
+        object-fit: contain;
         overflow:hidden
     }
     .icon-menu{
@@ -335,6 +337,7 @@ nav{
 
     .categoria-fila{
         display: flex;
+        /* flex-wrap: wrap; */
         /* width: 99%; */
     }
 
@@ -387,7 +390,9 @@ nav{
     }
 
     .content-fotos img{
-        height: 500px;
+        /* height: 500px; */
+        height: 700px;
+        width: 100%;
     }
 
     .fixed{
@@ -395,7 +400,7 @@ nav{
     }
 
     .proyecto{
-
+        margin-right: 100px;
     }
 }
 
