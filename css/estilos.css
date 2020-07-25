@@ -53,7 +53,7 @@ img{
 
 }
 
-.logo{
+.logo{x
     width: 200px;
     height: 100px;
     margin: 0;
@@ -80,24 +80,6 @@ nav{
     z-index: 100;
 }
 
-.menu{
-    list-style: none;
-    padding: 0; 
-    margin: 0;
-    background-size: cover; 
-    /* background-image: url('/assets/brocha.png'); */
-    background-repeat: no-repeat;
-
-/* 
-    background: #131418;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vh;
-    -webkit-clip-path: circle(50px at 90% -10%);
-    clip-path: circle(50px at 90% -20%);
-    transition: all 1s ease-out;
-    pointer-events: none; */
-}
 
 .menu__link{
     display: block;
@@ -119,7 +101,7 @@ nav{
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
-    /* z-index: 100000; */
+    z-index: 100000;
 }
 
 /* Estilos del banner */
@@ -192,9 +174,9 @@ nav{
     text-align: right;
 }
 
-.categoria:hover img{
+/* .categoria:hover img{
     background: rgba(0, 0, 0,0.4);
-}
+} */
 
 .categoria a::before{
     opacity: 0;
@@ -210,6 +192,7 @@ nav{
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
+    /* padding: 20px; */
 }
 
 .categoria a:hover:before {
@@ -263,6 +246,7 @@ nav{
 
 .content-proyecto{
     padding: 20px;
+    color: white;
 }
 
 .content-fotos img{
@@ -270,6 +254,7 @@ nav{
     width: 100%;
     object-fit: cover;
     padding: 10px;  
+    border-radius: 10px;
 }
 
 #collage{
@@ -288,8 +273,41 @@ nav{
     padding: 10px;
 }
 
+.nombreProyecto{
+    font-family:categoriaKosama;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+@media screen and (max-width:899px){
+    .menu{
+        list-style: none;
+        padding: 0; 
+        margin: 0;
+        left: 0;
+        top:0;
+        /* background-size: cover;  */
+        /* background-image: url('/assets/brocha.png'); */
+        /* background-image: url('/assets/fondo_rojo_textura.jpg'); */
+        /* background-repeat: no-repeat; */
+    
+        display: flex;
+        position: fixed;
+        background: darkred;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        -webkit-clip-path: circle(50px at 90% -10%);
+        clip-path: circle(50px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+}
+
 /* Estilos responsive */
-@media screen and (min-width:900px){
+@media screen and (min-width:90`0px){
 
     .nav{
         position: static;
@@ -297,11 +315,35 @@ nav{
         margin: auto;
     }
 
+    .hamburger{
+        display: none;  
+    }
+
     .menu{
+        position: absolute;
+        height: auto;
         display: flex;
         overflow:hidden;
+        background-size: cover; 
         background-image: url('/assets/brocha.png');
+        /* background-image: url('/assets/fondo_rojo_textura.jpg'); */
+        background-repeat: no-repeat;
+        z-index: 1000000;
+        top: 40px;
+        right: 100px;
+    }
+    .menu li{
+        opacity: 1 !important;
+        z-index: 1000000;
+    }
 
+    .menu__link{
+        display: flex;
+
+    }    
+    .menu__item{
+        list-style:none;
+        
     }
     .icon-menu{
         display: none;
@@ -439,8 +481,10 @@ nav{
         overflow-y: scroll;
     }
 
-    .content-proyecto{
+    .content-fotos img{
+        padding: 0px;  
         /* position: fixed; */
+        /* color: white; */
     }
 
     #collage{
@@ -464,6 +508,10 @@ nav{
     .proyecto{
         margin-right: 100px;
     }
+    .blanco{
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media screen and (min-width:1500px){
@@ -474,16 +522,11 @@ nav{
     }
 
     .negro{
-        width: 100%;
         margin:20px;
     }
 
-    .fotoSlider,.fotoSlider2{
-        /* width: 45%;
-        margin-top: 0;
-        padding-top: 0;
-        margin-left: 0; */
-        /* padding-left: 10px; */
+    .slider1 img{
+        height: 285px;
     }
 
     .info_zona{
@@ -512,4 +555,19 @@ nav{
 @font-face{
     font-family: centuryCategoria;
     src: url("../assets//fonts/century.ttf");
+}
+
+
+
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
