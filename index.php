@@ -28,9 +28,9 @@
                     <!-- <nav class="nav" id="nav"> -->
                     <ul class="menu" id="menuUL">
                         <li class="menu__item"><a class="menu__link active" href="">INICIO</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">NOSOTROS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="nosotros">NOSOTROS</a></li>
                         <!-- <li class="menu__item"><a class="menu__link" href="">SERVICIOS</a></li> -->
-                        <li class="menu__item"><a class="menu__link" href="">CONTACTANOS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacto">CONTACTANOS</a></li>
                     </ul>
                     <!-- </nav> -->
                 </div>
@@ -94,39 +94,39 @@
         </div>
 
         <div class="negro">
-            .
-            <div class="categoria__lista__principal">
-                <div class="categoria categoria__item">
-                    <a href="categoria?id=1">
-                        <p class="viviendas">
-                            VIVIENDAS <br>
-                            <span class="letraCategoria">UNIFAMILIARES</span>
-                        </p>
-                        <img src="assets/inicio/casas_regulares.jpg" alt="" class="img__categoria">
-                    </a>
-                </div>
+            <div class="contenedor">
+                <div class="categoria__lista__principal">
+                    <div class="categoria categoria__item">
+                        <a href="categoria?id=1">
+                            <p class="viviendas">
+                                VIVIENDAS <br>
+                                <span class="letraCategoria">UNIFAMILIARES</span>
+                            </p>
+                            <img src="assets/inicio/casas_regulares.jpg" alt="" class="img__categoria">
+                        </a>
+                    </div>
 
-                <div class="categoria categoria__item">
-                    <a href="categoria?id=2">
-                        <p class="campo">
-                            CASAS <span class="letraCategoria">de</span> <br>
-                            <span class="letraCategoria">CAMPO Y PLAYA</span>
-                        </p>
-                        <img src="assets/inicio/casas_grandes.jpg" alt="" class="img__categoria">
-                    </a>
-                </div>
+                    <div class="categoria categoria__item">
+                        <a href="categoria?id=2">
+                            <p class="campo">
+                                CASAS <span class="letraCategoria">de</span> <br>
+                                <span class="letraCategoria">CAMPO Y PLAYA</span>
+                            </p>
+                            <img src="assets/inicio/casas_grandes.jpg" alt="" class="img__categoria">
+                        </a>
+                    </div>
 
-                <div class="categoria categoria__item">
-                    <a href="categoria?id=3" class="">
-                        <p class="edificios">
-                            EDIFICIOS <br>
-                            <span class="letraCategoria">VARIOS</span>
-                        </p>
-                        <img src="assets/inicio/edificios.jpg" alt="" class="img__categoria">
-                    </a>
+                    <div class="categoria categoria__item">
+                        <a href="categoria?id=3" class="">
+                            <p class="edificios">
+                                EDIFICIOS <br>
+                                <span class="letraCategoria">VARIOS</span>
+                            </p>
+                            <img src="assets/inicio/edificios.jpg" alt="" class="img__categoria">
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -136,7 +136,7 @@
     <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $(".slider1").slick({
                 lazyLoad: 'ondemand',
                 mobileFirst: true,

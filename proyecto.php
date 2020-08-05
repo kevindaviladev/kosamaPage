@@ -33,30 +33,30 @@
                 </ul>
             </div>
         </header>
-
+        
+        <div class="contenedor">
         <main class="main-proyecto">
-            <!-- <div class="contenedor"> -->
-            <div class="content-proyecto">
-                <h1 class="textoBanner campoC">
-                    <!-- VIVIENDA -->
-                    <span class="nombreProyecto"></span>
-                </h1>
+                <div class="content-proyecto">
+                    <h1 class="textoBanner campoC">
+                        <!-- VIVIENDA -->
+                        <span class="nombreProyecto"></span>
+                    </h1>
 
-                <div class="content-proyecto__ubicacion">
-                    <!-- <p>Villa los Sauces</p>
+                    <div class="content-proyecto__ubicacion">
+                        <!-- <p>Villa los Sauces</p>
                     <p>Pimentele</p> -->
-                </div>
-                <div class="content-proyecto__terreno">
-                    <span>A.Terreno: </span>
-                    <!-- <span>126m2</span> -->
-                </div>
+                    </div>
+                    <div class="content-proyecto__terreno">
+                        <span>A.Terreno: </span>
+                        <!-- <span>126m2</span> -->
+                    </div>
 
-                <div class="content-proyecto__construido">
-                    <span>A.Construido: </span>
-                    <!-- <span>126m2</span> -->
-                </div>
+                    <div class="content-proyecto__construido">
+                        <span>A.Construido: </span>
+                        <!-- <span>126m2</span> -->
+                    </div>
 
-                <!-- <span>Villa los Sauces</span> <br>
+                    <!-- <span>Villa los Sauces</span> <br>
                 <span>Pimentel - Chiclayo</span>
                 <br>
                 <span>A. Terreno </span>
@@ -64,25 +64,26 @@
                 <br>
                 <span>A. Construida </span>
                 <span>196m2</span> -->
-            </div>
-            <!-- </div> -->
+                </div>
 
-            <div class="blanco">
-                <div class="content-fotos">
-                    <!-- <img src="./assets/BA_vi.jpg" alt=""> -->
-                    <div id="collage">
-                        <img src="./assets/pruebaCollage.png" alt="">
-                    </div>
 
-                    <div id="fotos-items">
-                        <img src="blank.gif" class="lazy" data-src="./assets/9.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/10.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/11.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/12.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
-                        <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
+                <div class="blanco">
+                    <div class="content-fotos">
+                        <!-- <img src="./assets/BA_vi.jpg" alt=""> -->
+                        <div id="collage">
+                            <!-- <img src="./assets/pruebaCollage.png" alt=""> -->
+                        </div>
+
+                        <div id="fotos-items">
+                            <!-- <img src="blank.gif" class="lazy" data-src="./assets/9.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/10.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/11.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/12.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px">
+                            <img src="blank.gif" class="lazy" data-src="./assets/8.jpg" alt="" height="300px" width="400px"> -->
+                        </div>
                     </div>
                 </div>
             </div>

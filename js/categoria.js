@@ -54,14 +54,18 @@ function getParameterByName(name) {
 function listar() {
   const idCategoria = getParameterByName("id");
   let proyectoLista = document.getElementsByClassName("categoria__lista")[0];
+  let pathProyecto = "";
   switch (idCategoria) {
     case "1":
       texto = "Vivienda";
+      pathProyecto = "proyectos_viviendas";
       break;
     case "2":
       texto = "Edificio";
+      pathProyecto = "proyectos_edificios";
       break;
     case "3":
+      pathProyecto = "proyectos_casas_campo";
       texto = "Casa de campo";
       break;
   }
@@ -97,8 +101,8 @@ function listar() {
         p.appendChild(document.createTextNode(texto));
         p.appendChild(document.createElement("br"));
         p.appendChild(span);
-
-        img.src = "assets/inicio/edificios.jpg";
+        console.log("PATH: ",`assets/imagenes/${pathProyecto}/${dato.ruta}/1.jpg`);
+        img.src = `assets/imagenes/${pathProyecto}/${dato.ruta}/1.jpg`;
 
         etiqueta.href = `proyecto?id=${dato.id}`;
         etiqueta.appendChild(p);

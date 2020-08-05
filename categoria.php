@@ -48,8 +48,9 @@
 
     <div class="negro">
         <!-- <div class="categoria-fila"> -->
-        <div class="categoria__lista">
-            <!-- <div class="categoria">
+        <div class="contenedor">
+            <div class="categoria__lista">
+                <!-- <div class="categoria">
                 <a href="proyecto.html">
                     <p class="viviendas">
                         VIVIENDA <br>
@@ -58,6 +59,8 @@
                     <img src="assets/inicio/casas_regulares.jpg" alt="" class="img__categoria">
                 </a>
             </div> -->
+            </div>
+
         </div>
 
         <!-- </div> -->

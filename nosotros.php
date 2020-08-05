@@ -20,7 +20,9 @@
         <div class="rojo">
             <header class="header">
                 <div class="contenedor">
-                    <img src="assets/inicio/logoKosama.png" alt="" class="logo">
+                    <a href="index">
+                        <img src="assets/inicio/logoKosama.png" alt="" class="logo">
+                    </a>
                     <!-- <span class="icon icon-menu" id="btnMenu"></span> -->
                     <div class="hamburger">
                         <div class="line1"></div>
@@ -29,10 +31,10 @@
                     </div>
                     <!-- <nav class="nav" id="nav"> -->
                     <ul class="menu" id="menuUL">
-                        <li class="menu__item"><a class="menu__link active" href="">INICIO</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">NOSOTROS</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">SERVICIOS</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">UBICANOS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="index">INICIO</a></li>
+                        <li class="menu__item"><a class="menu__link active" href="">NOSOTROS</a></li>
+                        <!-- <li class="menu__item"><a class="menu__link" href="">SERVICIOS</a></li>-->
+                        <li class="menu__item"><a class="menu__link" href="contacto">CONTACTANOS</a></li>
                     </ul>
                     <!-- </nav> -->
                 </div>
@@ -47,9 +49,10 @@
                         <div class="nosotros__banner__texto">
                             <!-- <img src="assets/inicio/logoKosama.png" alt="logo KO-sama"> -->
                             <p>
-                                Somos una empresa constructura, contamos con 20 años de experiencia plasmando tus sueños en papel y concreto.
-                                <!-- <br> -->
-                                Permítenos formar parte de la construcción de tu proyecto y logremos juntos cumplir tus sueños!
+                            Ko – Sama arquitectos, es formada por un grupo humano con la capacidad profesional marcada por la experiencia y trayectoria con más de 20 años y las nuevas tendencias del rubro 
+                            Arquitectura – Construcción; Orientados a llenar y satisfacer las expectativas de nuestros clientes. 
+                            <br>
+                            En resumen……PLASMAMOS SUS SUEÑOS EN PAPEL Y CONCRETO
                             </p>
                         </div>
                     </div>
@@ -99,14 +102,14 @@
                     <span class="headerLine"></span>
                 </div>
                 <div class="customer-logos">
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image1.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image2.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image3.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image4.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image5.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image6.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image7.png"></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-carousel/master/images/image8.png"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Shumpi_soccer.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Renaware_del_Peru.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Jockey_Club_Chiclayo.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Colegio_de_Enfermeros.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Risan_sac.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Grupo_Latorre.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Torre_del_sol.PNG"></div>
+                    <div class="slide slide-image"><img src="assets/clientes/Descanso_del_Inca_Hotel.PNG"></div>
                 </div>
             </section>
         </div>
