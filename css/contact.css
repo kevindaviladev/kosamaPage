@@ -18,7 +18,7 @@
 }
 
 #contact {
-  background: #F9F9F9;
+  /* background: #F9F9F9; */
   padding: 25px;
   margin: auto auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -29,6 +29,7 @@
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
+  color: #E0E0E0;
 }
 
 #contact h4 {
@@ -44,6 +45,15 @@ fieldset {
   min-width: 100%;
   padding: 0;
   width: 100%;
+}
+
+#contact input {
+  border-radius: 10em;
+}
+
+#contact textarea {
+  border-radius: 1em;
+
 }
 
 #contact input[type="text"],
@@ -79,7 +89,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #EF7A65;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -87,7 +97,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: #F29584;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;

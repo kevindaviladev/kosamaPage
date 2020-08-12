@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/fontastic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,40 +36,36 @@
                 </ul>
             </div>
         </header>
-        
+
         <div class="contenedor">
-        <main class="main-proyecto">
-                <div class="content-proyecto">
-                    <h1 class="textoBanner campoC">
-                        <!-- VIVIENDA -->
-                        <span class="nombreProyecto"></span>
-                    </h1>
+            <main class="main-proyecto">
+                <div class="proyecto__contenedor">
+                    <div class="content-proyecto">
+                        <div class="content-proyecto__titulo">
+                            <h1 class="textoBanner campoC">
+                                <!-- VIVIENDA -->
+                                <span class="nombreProyecto"></span>
+                            </h1>
+                        </div>
 
-                    <div class="content-proyecto__ubicacion">
-                        <!-- <p>Villa los Sauces</p>
+                        <div class="content-proyecto__ubicacion">
+                            <!-- <p>Villa los Sauces</p>
                     <p>Pimentele</p> -->
-                    </div>
-                    <div class="content-proyecto__terreno">
-                        <span>A.Terreno: </span>
-                        <!-- <span>126m2</span> -->
+                        </div>
+                        <div class="content-proyecto__terreno">
+                            <span>A.Terreno: </span>
+                            <!-- <span>126m2</span> -->
+                        </div>
+
+                        <div class="content-proyecto__construido">
+                            <span>A.Construido: </span>
+                            <!-- <span>126m2</span> -->
+                        </div>
                     </div>
 
-                    <div class="content-proyecto__construido">
-                        <span>A.Construido: </span>
-                        <!-- <span>126m2</span> -->
+                    <div class="content-proyecto__descripcion">
                     </div>
-
-                    <!-- <span>Villa los Sauces</span> <br>
-                <span>Pimentel - Chiclayo</span>
-                <br>
-                <span>A. Terreno </span>
-                <span>126m2</span>
-                <br>
-                <span>A. Construida </span>
-                <span>196m2</span> -->
                 </div>
-
-
                 <div class="blanco">
                     <div class="content-fotos">
                         <!-- <img src="./assets/BA_vi.jpg" alt=""> -->
@@ -86,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
         </main>
     </div>
 

@@ -12,8 +12,8 @@ class Proyecto extends Conexion {
             $sentencia->execute();
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
             return $resultado;
-        } catch (\Throwable $th) {
-            throw $th;
+        } catch (Exception $ex) {
+            echo $ex;
         }
     }
 

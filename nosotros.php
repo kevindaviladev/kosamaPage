@@ -51,8 +51,10 @@
                             <p>
                             Ko – Sama arquitectos, es formada por un grupo humano con la capacidad profesional marcada por la experiencia y trayectoria con más de 20 años y las nuevas tendencias del rubro 
                             Arquitectura – Construcción; Orientados a llenar y satisfacer las expectativas de nuestros clientes. 
+                            </p>
                             <br>
-                            En resumen……PLASMAMOS SUS SUEÑOS EN PAPEL Y CONCRETO
+                            <p>
+                            En resumen...<strong class="slogan">PLASMAMOS SUS SUEÑOS EN PAPEL Y CONCRETO</strong> 
                             </p>
                         </div>
                     </div>

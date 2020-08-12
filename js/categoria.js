@@ -77,6 +77,8 @@ function listar() {
   })
     .then(function(response) {
       if (response.ok) {
+        console.log(response);
+        // PRUEBA
         return response.json();
       } else {
         throw "Error en la llamada Ajax";

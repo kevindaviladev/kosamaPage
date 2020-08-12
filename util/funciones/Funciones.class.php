@@ -115,14 +115,21 @@ class Funciones {
     
     public static function imprimeJSON($estado, $mensaje, $datos){
         //header("HTTP/1.1 ".$estado." ".$mensaje);
-        header("HTTP/1.1 ".$estado);
-        header('Content-Type: application/json');
+        try {
+            //code...
+            header("HTTP/1.1 ".$estado);
+            header('Content-Type: application/json');
+            
+            $response["estado"]	= $estado;
+            $response["mensaje"]	= $mensaje;
+            $response["datos"]	= $datos;
         
-        $response["estado"]	= $estado;
-        $response["mensaje"]	= $mensaje;
-        $response["datos"]	= $datos;
-	
-        echo json_encode($response);
+            echo json_encode($response);
+        } catch (Exception $th) {
+            //throw $th;
+            throw $th;
+        }
+
     }
 
     public static function cargarArchivo($nombreArchivo, $ruta){

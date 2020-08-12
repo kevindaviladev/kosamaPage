@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/fontastic.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+
+
+
 
 <body>
     <div class="padre">
@@ -107,9 +111,9 @@
                     </div>
 
                     <div class="categoria categoria__item">
-                        <a href="categoria?id=2">
+                        <a href="categoria?id=3">
                             <p class="campo">
-                                CASAS <span class="letraCategoria">de</span> <br>
+                                CASAS <span class="letraCategoria"></span> <br>
                                 <span class="letraCategoria">CAMPO Y PLAYA</span>
                             </p>
                             <img src="assets/inicio/casas_grandes.jpg" alt="" class="img__categoria">
@@ -117,7 +121,7 @@
                     </div>
 
                     <div class="categoria categoria__item">
-                        <a href="categoria?id=3" class="">
+                        <a href="categoria?id=2" class="">
                             <p class="edificios">
                                 EDIFICIOS <br>
                                 <span class="letraCategoria">VARIOS</span>

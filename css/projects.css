@@ -84,7 +84,8 @@
 }
 
 .projectFactsWrap .item p{
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: white;
   font-size: 18px;
   margin: 0;
   padding: 10px;
@@ -104,16 +105,17 @@
 .projectFactsWrap .item i{
   vertical-align: middle;
   font-size: 50px;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: white;
 }
 
 
 .projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
-  color: white;
+  color: gold;
 }
 
 .projectFactsWrap .item:hover span{
-  background: white;
+  background: gold;
 }
 
 @media (max-width: 786px){
@@ -135,7 +137,9 @@ footer{
 }
 
 footer p {
-color: rgba(255, 255, 255, 0.8);
+/* color: rgba(255, 255, 255, 0.8); */
+color: white;
+
   font-size: 16px;
   opacity: 0;
   font-family: 'Open Sans';
@@ -156,7 +160,9 @@ footer .authorWindow a{
 }
 
 footer p strong {
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+  color: white;
+
 }
 
 .about-me-img {

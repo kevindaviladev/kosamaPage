@@ -136,21 +136,26 @@ nav{
 
 .textoConcreto,.textoPapel{
     position:absolute; 
-    font-size:30px;
-    color:white
+    font-size: 1.3em;
 }
+
 .textoPapel{
     position: absolute;
-    top:0; 
-    left:10%;
+    bottom:0; 
+    left:5%;
     font-family: dreamsKosama;
+    /* -webkit-text-stroke: 1px black; */
+    color:white;
+    -webkit-text-stroke: 1px black;
 }
 
 .textoConcreto{
     position: absolute;
-    bottom:0;
+    top:0;
     right: 5%;
     font-family: concretoKosama;
+    color:white;
+    -webkit-text-stroke: 1px black;
 }
 
 #slider2,#slider3{
@@ -160,8 +165,12 @@ nav{
 /* CATEGORIAS */
 
 .letraCategoria{
-    font-family:categoriaKosama;
-    font-style: italic;
+    /* font-family:categoriaKosama; */
+    font-family: 'Rowdies', cursive;
+    font-style: bold;
+    font-size: 1em;
+    -webkit-text-stroke: 0.5px black;
+
 }
 
 .categoria{
@@ -233,16 +242,18 @@ nav{
 
 .textoBanner{
     font-family: centuryCategoria;
-    top: 10px;
+    top: 1%;
     left: 10px;
+    width: 45%;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 4.5vw;
 }
 
 .textoBannerInferior{
     font-family: dreamsKosama;
-    bottom: 10px;
-    font-size: 11px;
+    width: 45%;
+    bottom: 1%;
+    font-size: 3vw;
     left: 10px;
     text-transform: uppercase
 }
@@ -255,14 +266,37 @@ nav{
 }
 
 .content-proyecto{
-    padding: 20px;
-    width: 40%; 
+    padding: 10px 20px;
+    width: 100%; 
     color: white;
 }
 
-.content-proyecto__terreno,.content-proyecto__construido{
+.content-proyecto__titulo .textoBanner{
+    font-size: 2em;
+}
+
+.content-proyecto__terreno,.content-proyecto__construido {
     display: flex;
     justify-content: space-between;
+    margin: 5px 0;
+    width: 10em;
+}
+
+.content-proyecto__construido, .content-proyecto__terreno, .content-proyecto__descripcion {
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Poppins', serif; */
+}
+
+.content-proyecto__ubicacion{
+    font-size: 1.5em;
+}
+
+.content-proyecto__descripcion{
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+    text-align: justify;
+    font-style: italic;
 }
 
 .content-fotos img{
@@ -290,7 +324,7 @@ nav{
 }
 
 .nombreProyecto{
-    font-family:categoriaKosama;
+    font-family: 'Rowdies', cursive;
     letter-spacing: 0em;
     text-transform: none;
 }
@@ -310,10 +344,12 @@ nav{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    /* border: 1px solid violet; */
+    flex-direction: column;
 }
 
 .nosotros__banner__imagen, .nosotros__banner__texto{
-    width: 50%;
+    width: 100%;
 }
 
 .nosotros__banner__imagen{
@@ -321,17 +357,16 @@ nav{
 }
 
 .nosotros__banner__texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 2em;
-    font-weight: 500;
+    color: #E0E0E0;
     margin-top: 1em;
-    margin-bottom: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.slogan{
+    color: white;
 }
 
 .slide-image{
@@ -360,11 +395,20 @@ nav{
     display: none;
 }
 
-@media screen and (max-width: 374px){
+@media screen and (max-width: 422px){
     .categoria img{
         height: 200px;
     }
+
 }
+
+@media screen and (min-width: 425px){
+    .textoConcreto,.textoPapel{
+        position:absolute; 
+        font-size: 2em;
+    }
+}
+
 
 @media screen and (min-width:767px){
     .contacto__padre{
@@ -376,6 +420,22 @@ nav{
     .contacto__imagen{
         display: block;
     }
+
+    .textoConcreto,.textoPapel{
+        position:absolute; 
+        font-size: 2.5em;
+    }
+
+    .categoria img {
+        height: 500px;
+        width: 100%;
+    }
+
+    .categoria p {
+        font-size: 3em;
+
+    }
+
 }
 
 @media screen and (max-width:899px){
@@ -534,24 +594,6 @@ nav{
         width: 100%;
     }
 
-    .textoConcreto,.textoPapel{
-        font-size: 50px;
-        position: absolute;
-    }
-
-    .textoPapel{
-        top:0;         
-        left:0;
-        font-family: dreamsKosama;
-    }
-    
-    .textoConcreto{
-        bottom:0;
-        right: 0;
-        text-transform: uppercase;
-        font-family: concretoKosama;
-    }
-
     /* PAGINA CATEGORIA*/
 
     .portada-categoria img{
@@ -564,7 +606,7 @@ nav{
 
     .textoBanner{
         font-family: centuryCategoria;
-        top: 80px;
+        top: 10%;
         left: 50px;
         text-transform: uppercase;
         font-size: 45px;
@@ -574,17 +616,23 @@ nav{
         font-family: dreamsKosama;
         bottom: 50px;
         font-size: 30px;
-        left: 90px;
+        left: 5%;
         text-transform: uppercase
     }
 
     /* PAGINA PROYECTO */
 
     .main-proyecto{
-        display: flex;
-        justify-content: space-between;
-        overflow-y: scroll;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        gap: 5vw;
+        /* justify-content: space-between; */
+        /* overflow-y: scroll; */
     }
+
+    .main-proyecto .blanco{
+    }
+
 
     .content-fotos img{
         padding: 0px;  
@@ -617,15 +665,41 @@ nav{
     .proyecto{
         margin-right: 100px;
     }
+
+
     .blanco{
         padding: 0;
         margin: 0;
+    }
+
+    .content-proyecto__descripcion{
+        font-size: 1.3em;
+    }
+
+    .nosotros__banner{
+        flex-direction: row;
+    }
+
+    .nosotros__banner__imagen,.nosotros__banner__texto{
+        width: 50%;
+        color: white;
+    }
+
+    .nosotros__banner__texto{
+        margin-top: 5em;
     }
 
     /* EXTRAS */
     .campoC{
         font-size: 30px;
         /* color: blueviolet; */
+    }
+}
+
+@media screen and (min-width:1300px){
+    .textoConcreto,.textoPapel{
+        position:absolute; 
+        font-size: 3.5em;
     }
 }
 

@@ -20,10 +20,12 @@ try {
 
     $objProyecto = new Proyecto();
     $resultado = $objProyecto->listarProyectos($tipoProyecto);
+
     Funciones::imprimeJSON(200, "",$resultado);
 } catch (\Throwable $th) {
     //throw $th;
-    Funciones::imprimeJSON(500, $exc->getMessage(), "");
+    echo $th;
+    Funciones::imprimeJSON(500, $th, "");
 }
 
 ?>

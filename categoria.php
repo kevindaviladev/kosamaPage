@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/fontastic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
