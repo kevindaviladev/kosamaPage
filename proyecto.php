@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fontastic.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
@@ -88,6 +89,12 @@
         </div>
         </main>
     </div>
+
+    <section>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=51978100062&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20KO-Sama%20." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </section>
 
     <script src="js/funciones.js"></script>
     <script src="js/proyecto.js"></script>

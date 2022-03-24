@@ -11,38 +11,8 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- <style type="text/css">
-        .redes-flotantes {
-            position: fixed;
-            right: 8px;
-            top: 75%;
-            z-index: 20;
-        }
-
-        .redes-flotantes img {
-            float: right;
-            clear: right;
-            margin: 5px;
-            -moz-transform: scale(.8);
-            -webkit-transform: scale(.8);
-            -o-transform: scale(.8);
-            -ms-transform: scale(.8);
-            transform: scale(.8);
-            -webkit-transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-            -o-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-        }
-
-        .redes-flotantes img:hover {
-            -moz-transform: scale(1.1) rotate(6deg);
-            -webkit-transform: scale(1.1) rotate(6deg);
-            -o-transform: scale(1.1) rotate(6deg);
-            -ms-transform: scale(1.1) rotate(6deg);
-            transform: scale(1.1) rotate(6deg);
-        }
-    </style> -->
 </head>
 
 <body>
@@ -142,10 +112,11 @@
         </main>
     </div>
 
-
-
-
-
+    <section>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=51978100062&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20KO-Sama%20." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </section>
 
     <script src="js/funciones.js"></script>
 </body>

@@ -48,8 +48,18 @@ $.fn.jQuerySimpleCounter = function(options) {
 
 $("#number1").jQuerySimpleCounter({ end: 15, duration: 3000 });
 $("#number2").jQuerySimpleCounter({ end: 55, duration: 3000 });
-$("#number3").jQuerySimpleCounter({ end: 359, duration: 2000 });
-$("#number4").jQuerySimpleCounter({ end: 246, duration: 2500 });
+$("#number3").jQuerySimpleCounter({ end: 29284.00, duration: 2000 });
+$("#number4").jQuerySimpleCounter({ end: 13624.00 , duration: 2500 });
+
+setTimeout(() => {
+  let disenados = document.getElementById('number3');
+  disenados.textContent = '29,283m²';
+
+  let construidos = document.getElementById('number4');
+  construidos.textContent = '13,624m²';
+  console.log(disenados);
+
+},2800);
 
 /* AUTHOR LINK */
 $(".about-me-img").hover(
@@ -59,7 +69,7 @@ $(".about-me-img").hover(
       .fadeIn("fast")
       .find("p")
       .addClass("trans");
-  },
+  },  
   function() {
     $(".authorWindowWrapper")
       .stop()

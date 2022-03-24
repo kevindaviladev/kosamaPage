@@ -13,6 +13,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -49,12 +50,18 @@
                         <div class="nosotros__banner__texto">
                             <!-- <img src="assets/inicio/logoKosama.png" alt="logo KO-sama"> -->
                             <p>
-                            Ko – Sama arquitectos, es formada por un grupo humano con la capacidad profesional marcada por la experiencia y trayectoria con más de 20 años y las nuevas tendencias del rubro 
-                            Arquitectura – Construcción; Orientados a llenar y satisfacer las expectativas de nuestros clientes. 
+                            Ko – Sama arquitectos EIRL, <p class="nosotros__banner__texto__descripcion">
+                                es una empresa formada por un grupo humano con la capacidad profesional marcada por la experiencia y trayectoria con más de 20 años y las nuevas tendencias del rubro Arquitectura – Construcción; Orientados a llenar y satisfacer las expectativas de nuestros clientes.
+                                </p> 
                             </p>
                             <br>
-                            <p>
-                            En resumen...<strong class="slogan">PLASMAMOS SUS SUEÑOS EN PAPEL Y CONCRETO</strong> 
+                            <p class="nosotros__banner__texto__descripcion">
+                            En resumen, plasmamos
+                            <br> 
+                            <br>
+                            <p class="textoPapelNosotros">Tus sueños en papel... </p> 
+                            <br>
+                            <p class="textoConcretoNosotros">...Y CONCRETO</p> 
                             </p>
                         </div>
                     </div>
@@ -71,27 +78,27 @@
                         <div class="projectFactsWrap ">
                             <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
                                 <i class="fa fa-briefcase"></i>
-                                <p id="number1" class="number">18</p>
+                                <p id="number1" class="number">17</p>
                                 <span></span>
                                 <p>AÑOS DE EXPERIENCIA</p>
                             </div>
                             <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
                                 <i class="fa fa-smile-o"></i>
-                                <p id="number2" class="number">55</p>
+                                <p id="number2" class="number">39</p>
                                 <span></span>
                                 <p>CLIENTES FELICES</p>
                             </div>
                             <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
-                                <i class="fa fa-home"></i>
-                                <p id="number3" class="number">359</p>
+                                <i class="fa fa-pencil-square-o "></i>
+                                <p id="number3" class="number">29,284.00m²</p>
                                 <span></span>
-                                <p>PROYECTOS CULMINADOS</p>
+                                <p>DISEÑADOS</p>
                             </div>
                             <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
-                                <i class="fa fa-star"></i>
-                                <p id="number4" class="number">246</p>
+                                <i class="fa fa-building "></i>
+                                <p id="number4" class="number">13,624.00</p>
                                 <span></span>
-                                <p>SUEÑOS CUMPLIDOS</p>
+                                <p>CONSTRUIDOS</p>
                             </div>
                         </div>
                     </div>
@@ -116,6 +123,14 @@
             </section>
         </div>
     </div>
+
+    <section>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=51978100062&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20KO-Sama%20." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </section>
+
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/funciones.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

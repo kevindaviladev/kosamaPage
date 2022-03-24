@@ -170,7 +170,6 @@ nav{
     font-style: bold;
     font-size: 1em;
     -webkit-text-stroke: 0.5px black;
-
 }
 
 .categoria{
@@ -353,11 +352,13 @@ nav{
 }
 
 .nosotros__banner__imagen{
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nosotros__banner__texto{
-    color: #E0E0E0;
+    color: white;
     margin-top: 1em;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -393,6 +394,28 @@ nav{
 
 .contacto__imagen{
     display: none;
+}
+
+.nosotros__banner__texto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.nosotros__banner__texto__descripcion{
+    font-family:categoriaKosama;
+    font-weight: bold;
+    color: white;
+}
+
+.textoPapelNosotros{
+    font-family: dreamsKosama;
+    font-size: 1.5em;
+    color: white;
+}
+
+.textoConcretoNosotros{
+    font-family: concretoKosama;
+    color: white;
+    font-size: 1.3em;
 }
 
 @media screen and (max-width: 422px){
@@ -434,6 +457,10 @@ nav{
     .categoria p {
         font-size: 3em;
 
+    }
+
+    .nosotros__banner__texto,.nosotros__banner__texto__descripcion,.textoPapelNosotros,.textoConcretoNosotros{
+        font-size: 1.2em;
     }
 
 }
@@ -689,6 +716,17 @@ nav{
         margin-top: 5em;
     }
 
+    .nosotros__banner__texto p{
+    }
+
+    .textoPapelNosotros{
+        font-size: 1.8em;
+    }
+
+    .textoConcretoNosotros{
+        font-size: 1.7em;
+    }
+
     /* EXTRAS */
     .campoC{
         font-size: 30px;
@@ -759,4 +797,25 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* Whatsapp */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
 }

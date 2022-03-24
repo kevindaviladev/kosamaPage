@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="css/fontastic.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <body>
     <div class="padre">
@@ -51,7 +49,6 @@
                                             <img src="assets/inicio/slider1-1.png">
                                             <img src="assets/inicio/slider1-2.png">
                                             <img src="assets/inicio/slider1-3.png">
-
                                         </div>
                                     </div>
                                     <span class="textoPapel">...tus sueños en papel</span>
@@ -133,6 +130,12 @@
             </div>
         </div>
     </div>
+
+    <section>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=51978100062&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20KO-Sama%20." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </section>
 
 
 
